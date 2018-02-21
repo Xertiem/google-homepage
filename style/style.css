@@ -1,0 +1,405 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Main settings*/
+
+html, body {
+    font-family: arial,sans-serif;
+    font-size: small;
+    height:100%;
+}
+
+/* Aded New for Footer behaviour */
+/* Playing with FlexBox */
+
+#container { /*FLEX*/
+    /*display: flex; /*FLEX*/
+    /*flex-flow: column wrap; /*FLEX*/
+    /*justify-content: space-between; /*FLEX*/
+    /*align-content: space-between; /*FLEX*/
+    min-height:100%;
+    position:relative;
+}
+
+#nav {
+    display: block;
+    /*width: 100%;*/
+    text-align: right;
+    padding: 16px;
+    font-size: 14px;
+    /*order: 1; /*FLEX*/
+}
+
+#center {
+    width: 100%;
+    /*margin-top: 12px;*/
+    padding-top: 9.3em;
+    padding-bottom: 6.5em; /*height of the footer*/
+    /*order: 2; /*FLEX*/
+    /*flex: 2; /*FLEX*/
+    background-color: white;
+}
+
+#footer {
+    position: absolute;
+    height: 6.5em; /* Height of the footer */
+    bottom: 0;
+    /*left: 0;
+    right: 0;*/
+    width: 100%;
+    background-color: #f2f2f2;
+    line-height: 40px; /*Specifies the line height.*/
+    min-width: 980px;
+    /*visibility: initial;*/
+    /*order: 99; /*FLEX*/
+    /*align-self: flex-end; /*FLEX*/
+    z-index: -1; /*Currently breaks the links at the bottom of the footer*/
+}
+
+form {
+  padding-left: 16px /* Might need to replace this with a div*/
+  position: relative;
+}
+
+
+
+
+
+a.lang {
+    padding: 0 5px;
+    text-decoration: none;
+    color: #609;
+}
+
+a.lang:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color: #609;
+
+}
+
+.nav_gm:hover {
+    text-decoration: underline;
+}
+
+.nav_img:hover{
+    text-decoration: underline;
+}
+
+.nav_cls a {
+    color: black;
+    text-decoration: none;
+    line-height: 24px;
+    padding-left: 15px;
+}
+
+#nav_login {
+    color: white;
+    background-color: #4285f4;
+    font-family: arial,sans-serif;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid #4285f4;
+    line-height: 28px;
+    padding: 6px 10px;
+    font-weight: bold;
+}
+
+/* New */
+.nav_elps{
+    display: inline-block;
+    position: relative;
+    
+}
+
+.nav_elps:hover .fst_li_mnu{
+    display: block;
+}
+
+.nav_elps:hover .fst_li_mnu .mnu_line{
+    /*overflow: scroll;*/
+}
+
+.nav_list{
+    margin-right: 15px;
+    border: none;
+    background: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D) transparent;
+}
+
+.img_size {
+    max-width: 17px;
+    height: 17px;
+    padding-left: 15px;
+    opacity: 0.5;
+}
+
+.img_size:hover {
+    opacity: 1;
+}
+
+/* New */
+.fst_li_mnu{
+    position: absolute;
+    display: none;
+    min-width: 150px;
+    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
+    background-color: #fff;
+    right: 10px;
+    width: max-content;
+    max-height: 526px;
+    height: 472px;
+    overflow-y: scroll;
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
+    z-index: 99;
+}
+
+/* New */
+.column {
+    float: left;
+    /*width: 33.33%;
+    padding: 10px;*/
+}
+
+/* New */
+.column a{
+    padding: 16px;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    display: block;
+    text-align: center;
+    min-height: 100%;
+    float: none;
+}
+
+/* New */
+
+.li_opt {
+    display: inline-block;
+}
+/* New */
+.opt_size{
+    max-width: 50px;
+    height: 50px;
+    display: block;
+}
+
+/* Newer More Button*/
+.btn_more {
+    clear: both;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.div_more:hover .btn_more{
+    display: none;
+}
+
+.div_more:hover .mnu_btn{
+    display: block;
+}
+
+
+.mnu_line {
+    border-bottom: 1px solid #ebebeb;
+    left: 28px;
+    width: 264px;
+    display: block;
+}
+
+/* Newer More Button*/
+.mnu_btn {
+    position: relative;
+    display: none;
+    min-width: 150px;
+
+}
+
+.lnk_blk {
+    clear: both;
+    display: block;
+    text-align: center;
+}
+
+.lnk_blk:hover {
+    text-decoration: underline;
+}
+
+.img_mic {
+    padding: 0 8px;
+    float: right;
+    display:inline-block;
+    top: -30px;
+    position: relative;
+}
+
+.ctr_img {
+    height: 92px;
+    width: 272x;
+    padding-top: 20px;
+}
+.ctr_img:hover {
+    -webkit-filter: invert(100%);
+}
+
+.srch_bx {
+    border-style: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    /*width: 632px;*/
+    max-width: 584px;
+    min-height: 40px;
+    font: 16px arial, sans-serif;
+}
+
+.srch_in {
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    overflow: auto;
+    outline: none;
+    left: 0px;
+    background: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D) transparent;
+    font: 16px arial,sans-serif;
+    display: inline-block;
+    text-align: start;
+    padding: 1px 10px;
+}
+
+.mic_set {
+    background-size: 30px 30px;
+    /*display: inline-block;*/
+    height: 100%;
+    width: 26px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.in_forms {
+    padding-top: 30px;
+}
+
+
+.btn_sbmt {
+    padding-top: 18px;
+    max-width: 571px;
+    min-height: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+}
+
+.btn_srch, .btn_lcky {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+}
+
+.lang_diff{
+    max-height: 28px;
+    font-size: small;
+    margin-bottom: 24px;
+}
+.ctry {
+    margin-left: 30px;
+    text-align: left;
+    color: rgba(0,0,0,.54);
+    border-top: 1px solid #e4e4e4;
+}
+
+.ctry_ftr {
+    font-size: 15px;
+}
+
+.opt_ftr {
+    border:  1px solid #e4e4e4;
+}
+
+span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
+    text-decoration: none;
+    color: #666;
+    margin-left: 16px;
+}
+
+.brght_ftr{
+    margin-right: 30px;
+    float: right;
+}
+
+/* Links inside the dropdown */
+.dropbtn {
+    padding-left: 27px;
+    text-decoration: none;
+    border: none;
+    display: block;
+    background-color: #f1f1f1;
+
+}
+
+
+/* The container <span> - needed to position the dropdown content */
+ .brght_stg {
+    display: inline-block;
+    position: relative;
+  }
+
+/* Dropdown Content (Hidden by Default) */
+.stg_menu {
+    position: absolute;
+    display: none;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f2f2f2;
+    right: 10px;
+}
+
+
+.brght_stg:hover .stg_menu {
+    display: block;
+    bottom: 100%;
+}
+
+.adv_ftr {
+    padding: 0 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/* Add underlineof dropdown links on hover */
+.dropbtn:hover, .adv_ftr:hover{
+    text-decoration: underline;
+
+}
+
+/*.stg_menu:hover  a {
+    background: #fff;
+    border: 1px solid #999;
+    bottom: 30px;
+    padding: 10px 0;
+    position: absolute;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-align: left;
+    cursor: pointer;
+    min-width: 160px;
+}
+*/
