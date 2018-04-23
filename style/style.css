@@ -149,3 +149,37 @@ a:visited{
     top: -30px;
     position: relative;
 }
+
+.srch_bx {
+    border-style: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    max-width: 40%;
+    min-height: 40px;
+}
+
+.srch_in {
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    overflow: auto;
+    outline: none;
+    left: 0px;
+    background: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D) transparent;
+    font: 16px arial,sans-serif;
+    display: inline-block;
+    text-align: start;
+}
+
+.mic_set {
+    background-size: 30px 30px;
+    height: 100%;
+    width: 26px;
+}
+
+.btn_sbmt {
+    padding-top: 18px;
+    max-width: 571px;
+    min-height: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+}
