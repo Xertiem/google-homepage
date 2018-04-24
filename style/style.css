@@ -177,9 +177,57 @@ a:visited{
 }
 
 .btn_sbmt {
-    padding-top: 18px;
+    padding: 20px 0;
     max-width: 571px;
     min-height: 20px;
-    padding-bottom: 20px;
-    padding-left: 100px;
+}
+
+.btn_srch, .btn_lcky {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+}
+    
+.lang_diff{
+    max-height: 28px;
+    font-size: small;
+    margin-bottom: 24px;
+    font-family: arial,sans-serif;
+}
+
+/* Footer Styling*/
+
+#footer {
+    display: flex;
+    border: 10px solid  red;
+    min-height: 10vh;
+    flex-direction: column;
+    /*justify-content: ;*/
+    align-items: baseline;
+    background-color: #f2f2f2;
+    line-height: 40px; /*Specifies the line height.*/
+    min-width: 980px;
+
+}
+
+.ctry {
+    margin-left: 30px;
+    text-align: left;
+    color: rgba(0,0,0,.54);
+    border-top: 1px solid #e4e4e4;
+}
+
+.ctry_ftr {
+    font-size: 15px;
+}
+
+.opt_ftr {
+    border:  1px solid #e4e4e4;
 }
