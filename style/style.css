@@ -3,7 +3,7 @@ body {
 }
 
 /*#container {
-    display:flex;
+    /*display:flex;
     border: 10px solid  goldenrod;
     align-items: baseline; /*Wes Bos video 7 - Flexbox*/
     /*min-height:100vh;
@@ -19,7 +19,7 @@ a:visited{
 
 #nav {
     display: flex;
-    border: 10px solid  goldenrod;
+    /*border: 10px solid  goldenrod;*/                /*Colourful Borders*/
     min-height:9vh;
     justify-content:flex-end;
     align-items: baseline;
@@ -53,7 +53,7 @@ a:visited{
 
 .fst_li_mnu {
     position: absolute;
-    border: 10px solid  mistyrose;
+    /*border: 10px solid  mistyrose;*/                /*Colourful Borders*/
     display: none;
     min-height:9vh;
     flex-direction: column;
@@ -73,7 +73,7 @@ a:visited{
 
 .column{
     display: flex;
-    border: 10px solid  blue;
+    /*border: 10px solid  blue;*/                /*Colourful Borders*/
     min-height:9vh;
     align-items: baseline;
 }
@@ -114,6 +114,14 @@ a:visited{
     display: block;
 }
 
+/* Newer More Button*/
+.mnu_btn {
+    position: relative;
+    display: none;
+    min-width: 150px;
+
+}
+
 #nav_login {
     color: white;
     background-color: #4285f4;
@@ -129,7 +137,7 @@ a:visited{
 /* ----- Center Styling ----- */
 
 #center {
-    border: 10px solid  mediumorchid ;
+    /*border: 10px solid  mediumorchid ;*/                /*Colourful Borders*/
     min-height:10vh;                                            /*Test later*/
 }
 
@@ -178,8 +186,9 @@ a:visited{
 
 .btn_sbmt {
     padding: 20px 0;
-    max-width: 571px;
     min-height: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn_srch, .btn_lcky {
@@ -205,23 +214,26 @@ a:visited{
 /* Footer Styling*/
 
 #footer {
-    display: flex;
-    border: 10px solid  red;
+    /*display: flex;*/
+    /*border: 10px solid  red;*/                /*Colourful Borders*/
     min-height: 10vh;
-    flex-direction: column;
+    /*flex-direction: column;*/
     /*justify-content: ;*/
     align-items: baseline;
     background-color: #f2f2f2;
     line-height: 40px; /*Specifies the line height.*/
-    min-width: 980px;
+    min-width: 400px;
+    justify-content: flex-end;
 
 }
 
 .ctry {
+    display: flex;
     margin-left: 30px;
     text-align: left;
     color: rgba(0,0,0,.54);
     border-top: 1px solid #e4e4e4;
+    max-width: 75px;
 }
 
 .ctry_ftr {
@@ -232,7 +244,7 @@ a:visited{
     display: flex;
     justify-content:space-between;
     border:  1px solid #e4e4e4;
-        border: 10px solid  yellow;
+    /*border: 10px solid  yellow;*/                /*Colourful Borders*/
 }
 
 span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
@@ -243,13 +255,13 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
 }
 
 .blft_ftr {
-    border: 10px solid  purple;
+    /*border: 10px solid  purple;*/                /*Colourful Borders*/
 }
 
 .brght_ftr{
     margin-right: 30px;
     float: right;
-    border: 10px solid  green;
+    /*border: 10px solid  green;*/                /*Colourful Borders*/
 }
 
 .adv_ftr {
@@ -269,6 +281,9 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
     border: none;
     display: block;
     background-color: #f1f1f1;
+    font-size: 1vw;
+    color: #666;
+    
 
 }
 
