@@ -12,7 +12,7 @@ html, body {
     flex-direction: column;
 }
 
-a:visited{
+.lang_diff a:visited{
     color: #609;
 }
 
@@ -68,7 +68,9 @@ a:visited{
     right: 95px;
     top: 42px;
     margin-left: 10px;
-    
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
 }
 
 .nav_elps:hover .fst_li_mnu{
@@ -190,19 +192,12 @@ a:visited{
     -webkit-filter: invert(100%);
 }
 
-.img_mic {
-    padding: 0 8px;
-    float: right;
-    display:inline-block;
-    top: -30px;
-    position: relative;
-}
-
 .srch_bx {
     border-style: hidden;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     max-width: 40%;
     min-height: 40px;
+    font: 16px arial, sans-serif;
 }
 
 .srch_in {
@@ -216,6 +211,15 @@ a:visited{
     font: 16px arial,sans-serif;
     display: inline-block;
     text-align: start;
+    padding: 1px 10px;
+}
+
+.img_mic {
+    padding: 4px 8px;
+    float: right;
+    display:inline-block;
+    top: -30px;
+    position: relative;
 }
 
 .mic_set {
@@ -242,6 +246,11 @@ a:visited{
     margin: 11px 4px;
     padding: 0 16px;
     height: 36px;
+}
+
+.btn_srch:hover, .btn_lcky:hover{
+    border: 1px solid #e5e5e5;
+    color: black;
 }
     
 .lang_diff{
