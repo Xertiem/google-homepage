@@ -58,7 +58,7 @@ a:visited{
     position: absolute;
     /*border: 10px solid  mistyrose;*/                /*Colourful Borders*/
     display: none;
-    max-height:85vh;
+    max-height:70vh;
     flex-direction: column;
     min-width: 300px;
     box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
@@ -70,7 +70,6 @@ a:visited{
     margin-left: 10px;
     
 }
-
 
 .nav_elps:hover .fst_li_mnu{
     display: block;
@@ -98,9 +97,15 @@ a:visited{
     font-size: 13px;
 }
 
-.li_opt{
+.li_opt {
     width: calc(33.3333333%);
     display: inline-block;
+    border: 1px solid transparent;          /*Add a CSS border on hover without moving the element*/
+
+}
+
+.li_opt:hover {
+    border: 1px solid #e5e5e5;
 }
 
 .opt_size { 
@@ -245,6 +250,16 @@ a:visited{
     margin-bottom: 24px;
     font-family: arial,sans-serif;
     padding-top: 20px;
+}
+
+a.lang {
+    padding: 0 5px;
+    text-decoration: none;
+    color: #609;
+}
+
+a.lang:hover{
+    text-decoration: underline;
 }
 
 /* Footer Styling*/
