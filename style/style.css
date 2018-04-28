@@ -1,18 +1,19 @@
-body {
-    
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+  height: 100%;  
 }
 
-/*#container {
-    /*display:flex;
-    border: 10px solid  goldenrod;
-    align-items: baseline; /*Wes Bos video 7 - Flexbox*/
-    /*min-height:100vh;
-    flex-direction:column;
-}*/
+#container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 a:visited{
     color: #609;
-
 }
 
 /* ----- Navigation Styling ----- */
@@ -62,10 +63,13 @@ a:visited{
     background-color: #fff;
     width: max-content;
     overflow-y: scroll;
-    right: 100px;
-    top: 43px;
+    right: 95px;
+    top: 35px;
+    overflow-y: scroll;
+    margin-left: 10px;
     
 }
+
 
 .nav_elps:hover .fst_li_mnu{
     display: block;
@@ -78,9 +82,14 @@ a:visited{
     align-items: baseline;
 }
 
+.figcapt {
+    font-size: 13px;
+}
+
 .li_opt{
     width: calc(33.3333333%);
     display: inline-block;
+    padding: 1em;
 }
 
 .opt_size { 
@@ -122,6 +131,16 @@ a:visited{
 
 }
 
+.lnk_blk {
+    clear: both;
+    display: block;
+    text-align: center;
+}
+
+.lnk_blk:hover {
+    text-decoration: underline;
+}
+
 #nav_login {
     color: white;
     background-color: #4285f4;
@@ -137,7 +156,10 @@ a:visited{
 /* ----- Center Styling ----- */
 
 #center {
+    flex-grow: 1;
     /*border: 10px solid  mediumorchid ;*/                /*Colourful Borders*/
+    width: 100%;
+    background-color: white;
     min-height:10vh;                                            /*Test later*/
 }
 
@@ -145,6 +167,7 @@ a:visited{
     height: 92px;
     width: 272x;
     padding-top: 20px;
+    
 }
 .ctr_img:hover {
     -webkit-filter: invert(100%);
@@ -185,7 +208,7 @@ a:visited{
 }
 
 .btn_sbmt {
-    padding: 20px 0;
+    padding: 20px 50%;
     min-height: 20px;
     display: flex;
     justify-content: center;
@@ -214,6 +237,9 @@ a:visited{
 /* Footer Styling*/
 
 #footer {
+    bottom:0;
+    height: 5em; /* Height of the footer */
+    width: 100%;
     /*display: flex;*/
     /*border: 10px solid  red;*/                /*Colourful Borders*/
     min-height: 10vh;
@@ -221,7 +247,7 @@ a:visited{
     /*justify-content: ;*/
     align-items: baseline;
     background-color: #f2f2f2;
-    line-height: 40px; /*Specifies the line height.*/
+    line-height: 2.42em; /*Specifies the line height.*/
     min-width: 400px;
     justify-content: flex-end;
 
