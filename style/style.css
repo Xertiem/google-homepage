@@ -214,16 +214,16 @@ html, body {
 }
 
 .img_mic {
-    padding: 2px 8px;
+    padding: 4px 8px;
     float: right;
     display:flex;
-    top: -30px;
+    top: -34px;
     position: relative;
 }
 
 .mic_set {
     background-size: 30px 30px;
-    height: 3.5vh;
+    height: 2em;
     width: 26px;
 }
 
