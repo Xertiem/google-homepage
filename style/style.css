@@ -24,6 +24,8 @@ a:visited{
     min-height:9vh;
     justify-content:flex-end;
     align-items: baseline;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .nav_gm, .nav_img, .nav_elps, #nav_login{
@@ -56,7 +58,7 @@ a:visited{
     position: absolute;
     /*border: 10px solid  mistyrose;*/                /*Colourful Borders*/
     display: none;
-    min-height:9vh;
+    max-height:85vh;
     flex-direction: column;
     min-width: 300px;
     box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
@@ -64,8 +66,7 @@ a:visited{
     width: max-content;
     overflow-y: scroll;
     right: 95px;
-    top: 35px;
-    overflow-y: scroll;
+    top: 42px;
     margin-left: 10px;
     
 }
@@ -82,6 +83,17 @@ a:visited{
     align-items: baseline;
 }
 
+.column a{
+    padding: 16px 0;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    display: block;
+    text-align: center;
+    min-height: 100%;
+    float: none;
+}
+
 .figcapt {
     font-size: 13px;
 }
@@ -89,7 +101,6 @@ a:visited{
 .li_opt{
     width: calc(33.3333333%);
     display: inline-block;
-    padding: 1em;
 }
 
 .opt_size { 
@@ -161,12 +172,13 @@ a:visited{
     width: 100%;
     background-color: white;
     min-height:10vh;                                            /*Test later*/
+    margin-top: 8%;
 }
 
 .ctr_img {
     height: 92px;
     width: 272x;
-    padding-top: 20px;
+    padding: 20px 0;
     
 }
 .ctr_img:hover {
@@ -208,7 +220,7 @@ a:visited{
 }
 
 .btn_sbmt {
-    padding: 20px 50%;
+    padding: 10px 50%;
     min-height: 20px;
     display: flex;
     justify-content: center;
@@ -232,6 +244,7 @@ a:visited{
     font-size: 0.9vw;
     margin-bottom: 24px;
     font-family: arial,sans-serif;
+    padding-top: 20px;
 }
 
 /* Footer Styling*/
