@@ -10,7 +10,6 @@ html {
 /*html, body {
   height: 100%;
 }*/
-
 /* Mobile First - Base CSS*/
 .container {
   display: flex;
@@ -425,6 +424,7 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
 .dropbtn:hover, .adv_ftr:hover {
   text-decoration: underline;
 }
+
 /* Media Queries */
 /*Larger Mobiles*/
 @media only screen and (min-width: 360px) {
@@ -451,174 +451,363 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
 }
 
 /*Monitors*/
-  @media only screen and (min-width: 1200px) {
-    /*Navigation*/
-    .nav_mnu_sze, .nav_all {
-      display: none;
-    }
-    .nav_gm {
-      display: block;
-    }
+@media only screen and (min-width: 1200px) {
+  #container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+  }
+  /*Navigation*/
+  .nav_mnu_sze, .nav_all {
+    display: none;
+  }
 
-    .nav_img {
-      /*Positioning*/
-      color: black;
-      position: inherit;
-      font-weight: inherit;
-      font-family: inherit;
-      text-transform: inherit;
-      font-size: inherit;
-    }
+  .nav_gm {
+    display: block;
+  }
 
-    .nav_gm, .nav_img, .nav_elps, #nav_login{
-        margin: 10px;
-        color: black;
-        text-decoration: none;
-        left:auto;
-    }
+  .nav_img {
+    /*Positioning*/
+    color: black;
+    position: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    text-transform: inherit;
+    font-size: inherit;
+  }
 
-    .nav_gm:hover, .nav_img:hover {
-        text-decoration: underline;
-    }
+  .nav_gm, .nav_img, .nav_elps, #nav_login {
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    left: auto;
+  }
 
-    .fst_li_mnu {
-        max-height: 45vh
-    }
+  .nav_gm:hover, .nav_img:hover {
+    text-decoration: underline;
+  }
 
-    .btn_more {
-        clear: both;
-        background-color: #f5f5f5;
-        border: none;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: block;
-        font-size: 16px;
-        cursor: pointer;
-        width: 100%;
-        min-height: 40px;
-    }
+  .btn_more {
+    clear: both;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    min-height: 40px;
+  }
 
-      .div_more:hover .btn_more{
-          display: none;
-      }
+  .div_more:hover .btn_more {
+    display: none;
+  }
 
-      .div_more:hover .mnu_btn{
-          display: block;
-      }
+  .div_more:hover .mnu_btn {
+    display: block;
+  }
 
-      .mnu_btn {
-          position: relative;
-          display: none;
-          min-width: 150px;
-      }
+  .mnu_btn {
+    position: relative;
+    display: none;
+    min-width: 150px;
+  }
 
-      .lnk_blk {
-        padding: 10px 0;
-      }
+  .lnk_blk {
+    padding: 10px 0;
+  }
 
-      #nav_login {
-          color: white;
-          background-color: #4285f4;
-          font: bold 13px arial,sans-serif;
-          text-decoration: none;
-          border-radius: 2px;
-          border: 1px solid #4285f4;
-          line-height: 15px;
-          padding: 6px 10px;
-      }
+  #nav_login {
+    color: white;
+    background-color: #4285f4;
+    font: bold 13px arial, sans-serif;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid #4285f4;
+    line-height: 15px;
+    padding: 6px 10px;
+  }
 
-      /*Center*/
-      #center {
-        bottom: 450px;
-        /*bottom: 350px;
+  #center {
+    bottom: 270px;
+    /*bottom: 350px;
         bottom: 1250px;*/
-      }
+  }
 
-      .ctr_img {
-          height: 92px;
-          width: 272px;
-          padding: 15px 0;
-        }
+  .ctr_img {
+    height: 92px;
+    width: 272px;
+    padding: 15px 0;
+  }
 
-        .srch_bx{
-          border-radius: 3px;
-          max-width: 40%;
-          min-height: 40px;
-          font: 16px arial, sans-serif;
-        }
+  .srch_bx {
+    border-radius: 3px;
+    max-width: 35%;
+    min-height: 40px;
+    font: 16px arial, sans-serif;
+  }
 
-        .img_mic {
-          background-color: transparent;
-          border: transparent;
-          padding: 4px 8px;
-          float: right;
-          display:flex;
-          top: -40px;
-          position: relative;
-        }
+  .img_mic {
+    background-color: transparent;
+    border: transparent;
+    padding: 4px 8px;
+    float: right;
+    display: flex;
+    top: -40px;
+    position: relative;
+  }
 
-        .mic_set {
-          background-image: url('http://i.imgur.com/l5S4LZ2.png');
-        }
+  .mic_set {
+    background-image: url('http://i.imgur.com/l5S4LZ2.png');
+  }
 
-        .btn_sbmt {
-            padding: 10px 50%;
-            min-height: 20px;
-            display: flex;
-            justify-content: center;
-        }
+  .btn_sbmt {
+    padding: 10px 50%;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+  }
 
-        .btn_srch, .btn_lcky {
-            background-color: #f2f2f2;
-            border: 1px solid #f2f2f2;
-            border-radius: 2px;
-            color: #757575;
-            font-family: arial,sans-serif;
-            font-size: 1vw;
-            font-weight: bold;
-            margin: 0 4px;
-            padding: 0 16px;
-            height: 36px;
-        }
+  .btn_srch, .btn_lcky {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    font-family: arial, sans-serif;
+    font-size: 0.8vw;
+    font-weight: bold;
+    margin: 0 4px;
+    padding: 0 16px;
+    height: 36px;
+  }
 
-        .btn_srch:hover, .btn_lcky:hover{
-            border: 1px solid #e5e5e5;
-            color: black;
-        }
+  .btn_srch:hover, .btn_lcky:hover {
+    border: 1px solid #e5e5e5;
+    color: black;
+  }
 
-        /*Footer*/
-        #footer {
-          bottom:3px;
+  /*Footer*/
+  #footer {
+    bottom: 0;
+    min-height: 8.7vh;
+  }
 
-          min-height: 8.7vh;
-        }
+  .ctry {
+    display: flex;
+    margin-left: 30px;
+  }
 
-        .ctry {
-            display: flex;
-            margin-left: 30px;
-          }
-          .opt_ftr {
-            flex-direction: row;
-            justify-content:space-between;
-          }
-          span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
-              font-size: 1vw;
-          }
-          .blft_ftr {
-            justify-content: flex-start;
-              /*border: 10px solid  purple;*/                /*Colourful Borders*/
-          }
+  .opt_ftr {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-          .brght_ftr{
-              margin-right: 30px;
-              float: right;
-              flex-direction: row;
-              justify-content: flex-end;
-            }
+  span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
+    font-size: 0.8vw;
+  }
 
-            .stg_menu {
-              min-width: 175px;
-              left: -100px;
-            }
+  .blft_ftr {
+    justify-content: flex-start;
+    /*border: 10px solid  purple;*/
+    /*Colourful Borders*/
+  }
+
+  .brght_ftr {
+    margin-right: 30px;
+    float: right;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .stg_menu {
+    min-width: 175px;
+    left: -100px;
+  }
 }
+
+@media only screen and (min-width: 1500px) {
+  /*Center*/
+  #center {
+    bottom: 500px;
+  }
+}
+
+/*
+@media only screen and (min-width: 1920px) {
+
+  /*Navigation
+  .nav_mnu_sze, .nav_all {
+    display: none;
+  }
+
+  .nav_gm {
+    display: block;
+  }
+
+  .nav_img {
+    /*Positioning
+    color: black;
+    position: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    text-transform: inherit;
+    font-size: inherit;
+  }
+
+  .nav_gm, .nav_img, .nav_elps, #nav_login {
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    left: auto;
+  }
+
+  .nav_gm:hover, .nav_img:hover {
+    text-decoration: underline;
+  }
+
+  .fst_li_mnu {
+    max-height: 45vh
+  }
+
+  .btn_more {
+    clear: both;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    min-height: 40px;
+  }
+
+  .div_more:hover .btn_more {
+    display: none;
+  }
+
+  .div_more:hover .mnu_btn {
+    display: block;
+  }
+
+  .mnu_btn {
+    position: relative;
+    display: none;
+    min-width: 150px;
+  }
+
+  .lnk_blk {
+    padding: 10px 0;
+  }
+
+  #nav_login {
+    color: white;
+    background-color: #4285f4;
+    font: bold 13px arial, sans-serif;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid #4285f4;
+    line-height: 15px;
+    padding: 6px 10px;
+  }
+
+  /*Center
+  #center {
+    bottom: 450px;
+    /*bottom: 350px;
+        bottom: 1250px;
+  }
+
+  .ctr_img {
+    height: 92px;
+    width: 272px;
+    padding: 15px 0;
+  }
+
+  .srch_bx {
+    border-radius: 3px;
+    max-width: 40%;
+    min-height: 40px;
+    font: 16px arial, sans-serif;
+  }
+
+  .img_mic {
+    background-color: transparent;
+    border: transparent;
+    padding: 4px 8px;
+    float: right;
+    display: flex;
+    top: -40px;
+    position: relative;
+  }
+
+  .mic_set {
+    background-image: url('http://i.imgur.com/l5S4LZ2.png');
+  }
+
+  .btn_sbmt {
+    padding: 10px 50%;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn_srch, .btn_lcky {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    font-family: arial, sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    margin: 0 4px;
+    padding: 0 16px;
+    height: 36px;
+  }
+
+  .btn_srch:hover, .btn_lcky:hover {
+    border: 1px solid #e5e5e5;
+    color: black;
+  }
+
+  /*Footer
+  #footer {
+    bottom: 0;
+    min-height: 8.7vh;
+  }
+
+  .ctry {
+    display: flex;
+    margin-left: 30px;
+  }
+
+  .opt_ftr {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
+    font-size: 0.8vw;
+  }
+
+  .blft_ftr {
+    justify-content: flex-start;
+    /*border: 10px solid  purple;*/
+    /*Colourful Borders
+  }
+
+  .brght_ftr {
+    margin-right: 30px;
+    float: right;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .stg_menu {
+    min-width: 175px;
+    left: -100px;
+  }
+}*/
