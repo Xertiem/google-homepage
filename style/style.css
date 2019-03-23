@@ -632,11 +632,21 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
   #center {
     bottom: 500px;
   }
+
+  /*Footer*/
+  #footer {
+    min-height: 8vh;
+  }
 }
 
-/*
+@media only screen and (min-width: 1600px) {
+  /*Center*/
+  #center {
+    bottom: 380px;
+  }
+}
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px){
 
   /*Center*/
   #center {
