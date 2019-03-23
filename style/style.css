@@ -448,6 +448,11 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
   .srch_bx {
     max-width: 70%;
   }
+    
+  .img_mic {
+    padding: 10px 8px;
+    top: -48px;
+  }
 }
 
 /*Monitors*/
