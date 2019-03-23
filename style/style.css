@@ -442,7 +442,7 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
 
 @media only screen and (min-width: 1024px) {
   #center {
-    bottom: 1050px;
+   bottom: 500px;
   }
 
   .srch_bx {
