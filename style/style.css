@@ -425,8 +425,15 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
   text-decoration: underline;
 }
 
+
 /* Media Queries */
 /*Larger Mobiles*/
+@media only screen and (max-height: 480px){
+  #center {
+    bottom: 170px;
+  }
+}
+
 @media only screen and (min-width: 360px) {
   #center {
     bottom: 320px;
