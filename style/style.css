@@ -453,6 +453,15 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
     padding: 10px 8px;
     top: -48px;
   }
+  .lang_diff {
+    margin-left: 150px;
+  }  
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 600px) {
+  #center {
+   bottom: 300px;
+  }
 }
 
 /*Monitors*/
