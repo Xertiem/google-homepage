@@ -576,6 +576,10 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
   .mic_set {
     background-image: url('http://i.imgur.com/l5S4LZ2.png');
   }
+    
+  .lang_diff {
+    margin-left: 0;
+  }  
 
   .btn_sbmt {
     padding: 10px 50%;
