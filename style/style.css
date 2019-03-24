@@ -433,7 +433,14 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
   }
 }
 
+
 /*Tablets and iPads*/
+@media only screen and (min-width: 600px){
+    #center {
+        bottom: 650px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
   #center {
     bottom: 705px;
@@ -463,6 +470,7 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
    bottom: 300px;
   }
 }
+
 
 /*Monitors*/
 @media only screen and (min-width: 1200px) {
