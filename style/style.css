@@ -15,6 +15,8 @@ html {
   display: flex;
   height: 48px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ----- Container - Navigation Styling ----- */
@@ -242,15 +244,23 @@ html {
 
 /* ----- Center Styling ----- */
 #center {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   bottom: 250px;
   width: 100%;
+  order: 2;
+  flex-basis: auto;
+}
+.img_link{
+      align-self: center;
 }
 
 .ctr_img {
   height: 56px;
   width: 160px;
   padding: 20px 0;
+  position:
 }
 
 .ctr_img:hover, .ctr_img:active {
@@ -258,6 +268,11 @@ html {
 }
 
 /*Search box and Mic image*/
+
+.in_forms{
+    align-self: center;
+}
+
 .srch_bx {
   border-style: hidden;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
@@ -425,29 +440,15 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
   text-decoration: underline;
 }
 
-
 /* Media Queries */
 /*Larger Mobiles*/
-@media only screen and (max-height: 480px){
-  #center {
-    bottom: 170px;
-  }
-}
-
 @media only screen and (min-width: 360px) {
   #center {
     bottom: 320px;
   }
 }
 
-
 /*Tablets and iPads*/
-@media only screen and (min-width: 600px){
-    #center {
-        bottom: 650px;
-    }
-}
-
 @media only screen and (min-width: 768px) {
   #center {
     bottom: 705px;
@@ -456,28 +457,13 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
 
 @media only screen and (min-width: 1024px) {
   #center {
-   bottom: 500px;
+    bottom: 1050px;
   }
 
   .srch_bx {
     max-width: 70%;
   }
-    
-  .img_mic {
-    padding: 10px 8px;
-    top: -48px;
-  }
-  .lang_diff {
-    margin-left: 150px;
-  }  
 }
-
-@media only screen and (min-width: 1024px) and (max-height: 600px) {
-  #center {
-   bottom: 300px;
-  }
-}
-
 
 /*Monitors*/
 @media only screen and (min-width: 1200px) {
@@ -560,7 +546,7 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
   }
 
   #center {
-    bottom: 270px;
+    bottom: 380px;
     /*bottom: 350px;
         bottom: 1250px;*/
   }
@@ -571,11 +557,17 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
     padding: 15px 0;
   }
 
+  .in_forms{
+    width: 100%;
+  }
+
   .srch_bx {
     border-radius: 3px;
-    max-width: 35%;
-    min-height: 40px;
     font: 16px arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30%;
+    min-height: 40px;
   }
 
   .img_mic {
@@ -584,17 +576,13 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
     padding: 4px 8px;
     float: right;
     display: flex;
-    top: -40px;
+    top: -35px;
     position: relative;
   }
 
   .mic_set {
     background-image: url('http://i.imgur.com/l5S4LZ2.png');
   }
-    
-  .lang_diff {
-    margin-left: 0;
-  }  
 
   .btn_sbmt {
     padding: 10px 50%;
@@ -661,10 +649,6 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
 }
 
 @media only screen and (min-width: 1500px) {
-  /*Center*/
-  #center {
-    bottom: 500px;
-  }
 
   /*Footer*/
   #footer {
@@ -672,24 +656,17 @@ span.blft_ftr a, span.brght_ftr a, span.brght_stg a {
   }
 }
 
-@media only screen and (min-width: 1600px) {
-  /*Center*/
-  #center {
-    bottom: 380px;
-  }
-}
+/* @media only screen and (min-width: 1600px) {
+
+} */
 
 @media only screen and (min-width: 1920px){
 
   /*Center*/
-  #center {
+  /* #center {
     bottom: 675px;
-  }
+  } */
 
-  .srch_bx {
-    max-width: 30%;
-    min-height: 40px;
-  }
 
   /*Footer*/
   #footer {
